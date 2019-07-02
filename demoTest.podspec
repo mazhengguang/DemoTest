@@ -30,7 +30,18 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'demoTest/Classes/**/*'
+#  s.source_files = 'demoTest/Classes/**/*'
+
+  
+  
+  s.subspec 'ReplaceMe' do |ss|
+    ss.source_files = "demoTest/Classes/ReplaceMe.swift"
+  end
+  
+  s.subspec 'UIFont' do |ss|
+    ss.source_files = "demoTest/Classes/UIFont+Extentison.swift"
+  end
+  
   
   # s.resource_bundles = {
   #   'demoTest' => ['demoTest/Assets/*.png']
